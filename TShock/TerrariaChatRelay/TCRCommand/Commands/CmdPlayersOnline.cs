@@ -9,7 +9,7 @@ namespace TerrariaChatRelay.TCRCommand.Commands
 
 		public string CommandKey { get; } = "playing";
 
-		public string[] Aliases { get; } = { "online", "who" };
+		public string[] Aliases { get; } = { "online", "who", "players", "active" };
 
 		public string Description { get; } = "Displays the list of players online";
 
