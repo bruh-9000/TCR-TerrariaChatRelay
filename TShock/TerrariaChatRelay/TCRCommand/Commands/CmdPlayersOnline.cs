@@ -29,7 +29,7 @@ namespace TerrariaChatRelay.TCRCommand.Commands
 			}
 			return $"</b>Players Online:</b> {players.Count()} / {Terraria.Main.maxNetPlayers}" +
 				"</br></box>" +
-				string.Join("<br>", players.Select(x =>
+				string.Join("\n", players.Select(x =>
 				{
 					string emoji = x.team >= 0 && x.team < teamEmojis.Count ? teamEmojis[x.team] : "";
 					return $"{emoji} {x.name} [HP: {x.statLife}/{x.statLifeMax2}]";
