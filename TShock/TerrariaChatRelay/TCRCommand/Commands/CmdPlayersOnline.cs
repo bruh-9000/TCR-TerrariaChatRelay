@@ -21,8 +21,8 @@ namespace TerrariaChatRelay.TCRCommand.Commands
 		public string Execute(object sender, string input = null, TCRClientUser whoRanCommand = null)
 		{
 			var players = Terraria.Main.player.Where(x => x.name.Length != 0);
-			List<string> teamEmojis = new List<string> {"⬜", "🟥", "🟩", "🟦", "🟨", "🟪"};
-			
+			List<string> teamEmojis = new List<string> {"", "🟥", "🟩", "🟦", "🟨", "🟪"};
+
 			if (players.Count() == 0)
 			{
 				return $"</b>Players Online:</b> {players.Count()} / {Terraria.Main.maxNetPlayers}</br></box>No players online!</box>";
