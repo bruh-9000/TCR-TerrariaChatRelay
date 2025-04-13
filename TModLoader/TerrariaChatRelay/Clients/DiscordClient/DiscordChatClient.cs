@@ -371,6 +371,45 @@ namespace TerrariaChatRelay.Clients.DiscordClient
 					{
 						outMsg = DiscordPlugin.Config.BossSpawned;
 						isEmbed = DiscordPlugin.Config.EmbedSettings.EmbedBossSpawnAndKill;
+
+						Dictionary<string, string> bossIndex = new Dictionary<string,string> {
+							{ "Eye of Cthulhu", "👁️" },
+							{ "King Slime", "👑" },
+							{ "Eater of Worlds", "🐍" },
+							{ "Brain of Cthulhu", "🧠" },
+							{ "Queen Bee", "🐝" },
+							{ "Skeletron", "💀" },
+							{ "Deerclops", "🦌" },
+							{ "Wall of Flesh", "🔥" },
+							{ "Queen Slime", "👸" },
+							{ "The Twins", "👀" },
+							{ "The Destroyer", "🧨" },
+							{ "Skeletron Prime", "🤖" },
+							{ "Mechdusa", "💀" },
+							{ "Plantera", "🌺" },
+							{ "Golem", "🗿" },
+							{ "Duke Fishron", "🐟" },
+							{ "Empress of Light", "🌈" },
+							{ "Lunatic Cultist", "🧙" },
+							{ "Moon Lord", "🌕" },
+							{ "Dark Mage", "🪄" },
+							{ "Ogre", "🐗" },
+							{ "Betsy", "🐉" },
+							{ "Mourning Wood", "🌲" },
+							{ "Pumpking", "🎃" },
+							{ "Everscream", "🎄" },
+							{ "Santa-NK1", "🎅" },
+							{ "Ice Queen", "❄️" },
+							{ "Martian Saucer", "🛸" }
+						};
+
+						string bossNameStr = "";
+						if (outMsg.Contains("%bossemoji%")) {
+							bossNameStr = msg.Message.Replace(" has awoken!", "").Trim();
+						}
+
+						string emoji = bossIndex.ContainsKey(bossNameStr) ? bossIndex[bossNameStr] : ":rage:";
+						outMsg = outMsg.Replace("%bossemoji%", emoji);
 					}
 					else if (msg.Source == TerrariaChatSource.BossKilled)
 					{
