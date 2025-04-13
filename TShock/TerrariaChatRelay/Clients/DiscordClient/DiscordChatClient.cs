@@ -431,7 +431,7 @@ namespace TerrariaChatRelay.Clients.DiscordClient
 							{ "XS-01 Artemis", "🤖" },
 							{ "XS-03 Apollo", "🤖" },
 							{ "XM-05 Thanatos", "🤖" },
-							{ "XF-09 Ares", "🤖" }
+							{ "XF-09 Ares", "🤖" },
 							{ "Supreme Witch, Calamitas", "🧙‍♀️" },
 							{ "Plaguebringer Goliath", "🦠" },
 						};
