@@ -373,6 +373,7 @@ namespace TerrariaChatRelay.Clients.DiscordClient
 						isEmbed = DiscordPlugin.Config.EmbedSettings.EmbedBossSpawnAndKill;
 
 						Dictionary<string, string> bossIndex = new Dictionary<string,string> {
+							// Vanilla Bosses
 							{ "Eye of Cthulhu", "👁️" },
 							{ "King Slime", "👑" },
 							{ "Eater of Worlds", "🐍" },
@@ -400,7 +401,39 @@ namespace TerrariaChatRelay.Clients.DiscordClient
 							{ "Everscream", "🎄" },
 							{ "Santa-NK1", "🎅" },
 							{ "Ice Queen", "❄️" },
-							{ "Martian Saucer", "🛸" }
+							{ "Martian Saucer", "🛸" },
+							// Calamity Bosses
+							{ "Desert Scourge", "🐉" },
+							{ "Crabulon", "🦀" },
+							{ "The Hive Mind", "🧠" },
+							{ "The Perforators", "🐛" },
+							{ "The Slime God", "🟢" },
+							{ "Cryogen", "❄️" },
+							{ "Aquatic Scourge", "🐍" },
+							{ "Brimstone Elemental", "🔥" },
+							{ "Calamitas Clone", "🧙‍♀️" },
+							{ "The Leviathan", "🐉" },
+							{ "Anahita", "🧜‍♀️" },
+							{ "Astrum Aureus", "🌟" },
+							{ "The Plaguebringer Goliath", "🦠" },
+							{ "Ravager", "🪨" },
+							{ "Astrum Deus", "🌌" },
+							{ "Profaned Guardians", "🛡️" },
+							{ "Dragonfolly", "🐉" },
+							{ "Providence, the Profaned Goddess", "🌞" },
+							{ "Storm Weaver", "⚡" },
+							{ "Ceaseless Void", "🌑" },
+							{ "Signus, Envoy of the Devourer", "🦑" },
+							{ "Polterghast", "👻" },
+							{ "The Old Duke", "🐊" },
+							{ "The Devourer of Gods", "🐉" },
+							{ "Yharon, Dragon of Rebirth", "🐉" },
+							{ "XS-01 Artemis", "🤖" },
+							{ "XS-03 Apollo", "🤖" },
+							{ "XM-05 Thanatos", "🤖" },
+							{ "XF-09 Ares", "🤖" }
+							{ "Supreme Witch, Calamitas", "🧙‍♀️" },
+							{ "Plaguebringer Goliath", "🦠" },
 						};
 
 						string bossNameStr = "";
