@@ -32,7 +32,7 @@ namespace TerrariaChatRelay.TCRCommand.Commands
 
 			worldinfo.Append("</b>Information about the currently running world</b> </br>");
 			worldinfo.Append($"</box>World Name: {Game.World.GetName()} </br>");
-			worldinfo.Append($"</box>Time: {timeFormatted} </br>");
+			worldinfo.Append($"Time: {timeFormatted} </br>");
 			worldinfo.Append($"Evil: {Game.World.GetEvilType()} </br>");
 #if TSHOCK
 			worldinfo.Append($"Difficulty: {(TCRCore.Game.World.IsMasterMode() ? "Master" : (TCRCore.Game.World.IsExpertMode() ? "Expert" : "Normal"))} </br>");
